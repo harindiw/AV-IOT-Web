@@ -1,0 +1,162 @@
+#offer{
+    background-color: #001125;
+  min-height: 80vh;
+  width: 100%;
+  padding-top: 80px;
+}
+
+#circle {
+  margin-top: 10px;
+  width: 800px; /* Set width */
+  height: 800px; /* Set height */
+  border: 3px solid rgba(255, 255, 255, 0.342); /* Set white border */
+  border-radius: 50%; /* Make it a circle */
+  margin: auto; /* Center the circle */
+  box-sizing: border-box; /* Include border in width and height */
+}
+
+@media screen and (max-width: 768px) {
+  #circle {
+    width: 1vw; /* Adjust width for smaller screens */
+    height: 474px
+  }
+}
+
+
+.first{
+  display: -webkit-inline-box;
+  padding-top: 48px;
+}
+.offer-h1 {
+  background-color: #00112500;
+  color: #727FFF;
+  font-size: 82px;
+  padding-left: 0px;
+}
+
+.offer-h2 {
+  background-color: #00112500;
+  color: #727FFF;
+  font-size: 82px;
+  padding-left: 322px;
+}
+
+
+.middle{
+  display: -webkit-inline-box;
+  padding-top: 208px;
+}
+.offer-h3 {
+  background-color: #00112500;
+  color: #727FFF;
+  font-size: 82px;
+  margin-left: -236px;
+  padding-left: 235px;
+}
+
+.offer-h4 {
+  background-color: #00112500;
+  color: #727FFF;
+  font-size: 82px;
+  /* padding-top: 174px; */
+  padding-left: 630px;
+}
+
+.last{
+  display: -webkit-inline-box;
+  padding-top: 166px;
+}
+
+.offer-h5 {
+  background-color: #00112500;
+  color: #727FFF;
+  font-size: 82px;
+  padding-left: 0px;
+}
+
+.offer-h6 {
+  background-color: #00112500;
+  color: #727FFF;
+  font-size: 82px;
+  padding-left: 322px;
+}
+
+
+
+
+
+
+.first, .middle, .last {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+.offer-h1, .offer-h2, .offer-h3, .offer-h4, .offer-h5, .offer-h6 {
+  background-color: #00112500;
+  color: aliceblue;
+  font-size: 82px;
+}
+
+@media screen and (max-width: 600px) {
+  /* .container {
+    flex-direction: row; /* Change to row layout for smaller screens 
+  } */
+  
+  .first, .middle, .last {
+    padding-top: 44px /* Remove padding on smaller screens */
+  }
+
+  .offer-h1, .offer-h2, .offer-h3, .offer-h4, .offer-h5, .offer-h6 {
+    font-size: 70px;
+    padding-left: 0px; /* Adjust padding for smaller screens */
+    padding-right: 19px; /* Adjust padding for smaller screens */
+  }
+
+  .offer-h3, .offer-h4{
+    padding-left: 0px; /* Adjust padding for smaller screens */
+    padding-right: 19px;
+    margin-left: -8px;
+  }
+
+  .offerh{
+    font-size: 18px;
+    margin-left: -7px;
+  }
+ 
+}
+
+
+
+
+
+.offerh{
+  color: aliceblue;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#offer-circle{
+  width: 100%;
+}
+
+.hov {
+  padding-top: 0px;
+  padding-left: 32px;
+  min-width: 332px;
+  height: 84px;
+  color: #001125;
+  /* color: #727FFF; */
+  font-size: 25px;
+}
+
+.hov2 {
+  padding-top: 0px;
+  padding-left: 0px;
+  margin-right: 371px;
+  padding-right: 0px;
+  min-width: 281px;
+ color: #001125;
+  height: 84px;
+  /* color: #727FFF; */
+  font-size: 25px;
+}

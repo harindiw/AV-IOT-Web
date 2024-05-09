@@ -1,0 +1,45 @@
+#s-home{
+	background-image: url('./servicesHome.png');
+	background-size: cover;
+  min-height: 815px;
+  width: 100%;
+}
+
+.header-h{
+  position: absolute;
+  color: white;
+  margin-top: 128px;
+  margin-left: 53px;
+  padding-left: 22px;
+  font-size: 66px;
+  width: 702px;
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+    .header-h {
+      /* width: 100%;
+      display: block;
+      margin-bottom: 30px; */
+	  font-size: 32px;
+	  width: 305px;
+    }
+  }
+
+
+.header-p{
+	position: absolute;
+    color: white;
+    margin-top: 450px;
+    margin-left: 53px;
+    padding-left: 22px;
+    font-size: 24px;
+    width: 248px;
+    background-color: rgba(255, 255, 255, 0.089);
+    border-radius: 10px;
+}@media screen and (max-width: 800px) {
+    .header-p {
+		margin-top: 526px;
+    }
+  }
+

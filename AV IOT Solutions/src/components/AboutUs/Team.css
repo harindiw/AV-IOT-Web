@@ -1,0 +1,57 @@
+.About-h{
+    background-color: #001125;
+    margin-block-start: 20px;
+    text-align: center;
+}
+
+.about-column {
+    float: inline-start;
+    inline-size: 25%;
+    padding: 0 30px;
+  }
+  
+  /* Clear floats after the about-.about-columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive about-.about-columns */
+  @media screen and (max-inline-size: 600px) {
+    .about-column {
+      inline-size: 100%;
+      display: block;
+      margin-block-end: 20px;
+    }
+  }
+  
+  /* Style the counter card-as */
+  .card-a {
+    
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 16px;
+    text-align: center;
+    background-color: #001125;
+    /* background-image: url('../assets/img/story.jpg'); */
+    block-size: 408px;
+    inline-size: 360px;
+    background-size: cover;
+   
+    /* inline-size: 300px; */
+    /* box-shadow: inset 0 0 10px #05C7F2;
+    clip-path: polygon(0% 40px, 40px 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%); */
+  }
+
+  .team-card-img {
+    text-align: center;
+    background-image: url('./men.png');
+    block-size: 187px;
+    inline-size: 284px;
+    background-size: cover;
+    border-radius: 15px;  
+  }
+
+  .work-h1{
+    background-color: #001125;
+  }

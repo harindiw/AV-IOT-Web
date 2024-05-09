@@ -1,0 +1,53 @@
+#a-home{
+	background-color: #001125;
+	/* background-size: cover; */
+  min-height: 80vh;
+  width: 100%;
+}
+
+.About-h{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.About-p{
+    color: rgba(255, 255, 255, 0.37);
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 4px;
+    font-size: 28px;
+}
+
+.About-subh{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.About-subp1{
+    font-size: 22px;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.About-subp2{
+    font-size: 22px;
+    color: white;
+    text-align: right;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .About-p {
+        padding-left: 10px;
+        width: 687px;
+    }
+    .About-subh{
+        margin-top: 20px;
+    }
+    .About-subp{
+        width: 365px;
+    }
+  }

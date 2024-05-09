@@ -1,0 +1,79 @@
+#Choose{
+    background-color: #001125;
+  min-height: 80vh;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.offer-card{
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff00;
+    border-radius: 20px;
+    height: 348px;
+    width: 280px;
+    text-align: left;
+    
+}
+
+/* .offer-card-down{
+   
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff00;
+    border-radius: 20px;
+    height: 348px;
+    width: 280px;
+    text-align: left;
+    padding-top: 130px;
+} */
+
+.offer-column{
+    float: left;
+    width: 30%;
+    padding: 0 30px;
+    margin-left: -122px;
+    margin-left:10px;
+}
+
+/* .offer-column1{
+    float: left;
+    width: 25%;
+    padding: 0 30px;
+    margin-left: 38px;
+} */
+
+.ch1{
+    color: white;
+}
+
+.description{
+    color: rgba(255, 255, 255, 0.562);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .offer-column {
+        float: none; /* Remove float for mobile */
+        width: 100%; /* Full width for mobile */
+        padding: 0 15px; /* Adjust padding for smaller screens */
+        margin-left: auto; /* Center columns */
+        margin-right: auto; /* Center columns */
+        margin-bottom: -142px; /* Add margin bottom for spacing */
+    }
+
+    .offer-card {
+        width: calc(100% - 60px); /* Adjust card width for padding */
+        margin-left: auto; /* Center cards */
+        margin-right: auto; /* Center cards */
+    }
+
+    .ch1 {
+        font-size: 24px; /* Increase font size for headings on mobile */
+    }
+
+    .description {
+        font-size: 16px; /* Decrease font size for descriptions on mobile */
+    }
+}

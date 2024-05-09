@@ -1,0 +1,220 @@
+/* Float four column-fs side by side */
+  .column-f {
+    float: center;
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 20px;;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  /* .row {
+    margin: 0px 0px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 100px;
+      
+      background: #001125;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      
+      margin-bottom: 20px;
+      margin-top: -20px;
+     
+  } */
+  /* min-height: 100vh; */
+  /* margin-top: -14px; */
+   /* margin-top: 30px; */
+
+  /* Clear floats after the column-fs */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive column-fs */
+  @media screen and (max-width: 800px) {
+    .column-f {
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+      margin-left: 172px;
+    }
+
+    .row{
+      margin-left: 80px;
+    }
+  }
+  
+  /* Style the counter card-fs */
+  .card-f {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 16px;
+    text-align: center;
+    background-color: #001125;
+    /* background-image: url('../assets/img/story.jpg'); */
+    height: 412px;
+    width: 420px;
+    background-size: cover;
+    
+    /* width: 300px; */
+    /* box-shadow: inset 0 0 10px #05C7F2;
+    clip-path: polygon(0% 40px, 40px 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%); */
+  }
+  
+.story  h6{
+    margin-top: -30px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    font-size: 25px;
+    padding-left: 72px;
+  }
+
+  .story h2{
+    color: white;
+    position: absolute;
+    font-weight: 500;
+  }
+/*   
+  .card-f h2{
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  
+  .card-f p{
+    color: #727FFF;
+    font-size: 18px;
+  } */
+
+
+
+
+
+
+
+
+  .circle {
+    background: #00112500;
+    position: relative;
+    z-index: 0;
+    filter: contrast(1.3) brightness(2);
+    height: 420px;
+  }
+  .circle:before {
+    content: '';
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #000E41;
+    box-sizing: border-box;
+    z-index: 0;
+    transition: border-color 500ms;
+  }
+  .circle:after {
+    content: '';
+    top: 32px;
+    left: 32px;
+    right: 32px;
+    bottom: 32px;
+    position: absolute;
+    border-radius: 50%;
+    border: 21px solid #000E41;
+    box-sizing: border-box;
+    z-index: 0;
+    filter: blur(12.5px);
+  }
+  .circle:hover {
+    cursor: pointer;
+  }
+  .circle:hover::before {
+    animation: main-color 5s ease-in-out alternate infinite;
+  }
+  .circle:hover::after {
+    animation: highlight-color 5s ease-in-out alternate infinite;
+  }
+  .circle .noise {
+    mix-blend-mode: multiply;
+    z-index: 1;
+    position: relative;
+  }
+  .animated {
+    animation: 20s bgPos ease-in-out infinite alternate;
+  }
+  @keyframes bgPos {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 412px 412px;
+    }
+  }
+  @keyframes main-color {
+    from {
+      border-color: #727FFF;
+    }
+    40% {
+      border-color: #3FA1FB;
+    }
+    to {
+      border-color: #4FEED2;
+    }
+  }
+  @keyframes highlight-color {
+    from {
+      border-color: #000E41;
+    }
+    60% {
+      border-color: rgba(227, 199, 255, 0.6);
+    }
+    to {
+      border-color: #4FEED2;
+    }
+  }
+  /* body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .noise {
+    width: 450px;
+    height: 450px;
+    background-size: 200%;
+  }
+
+  .circle p {
+    color: #8591b5;
+    /* margin-top: 162px; */
+    padding-top: 90px;
+    padding-left: 68px;
+    font-size: 19px;
+    width: 318px;
+    font: weight 400px;
+}
+
+.story{
+  padding-top: 86px;
+      margin-left: -132px;
+}
+
+.featureHead{
+  margin-top: -100px;
+  padding-top: 243px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #001125;
+}

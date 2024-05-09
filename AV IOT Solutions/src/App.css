@@ -1,0 +1,100 @@
+/************ Custom Font ************/
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	/* font-weight: 700; */
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	/* font-weight: 500; */
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	/* font-weight: 400; */
+}
+
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 75px;
+  background-color: #001125;
+}
+
+body {
+  /* font-weight: 400; */
+  /* overflow-x: hidden; */
+  position: relative;
+  /* margin-left: 50px; */
+  /* background-color: #000000 !important; chanfge */
+  /* color: #fff !important; */
+  font-family: 'Centra', sans-serif !important;
+  background-color: #001125;
+}
+
+@media (max-width:400px) {
+	body {
+    overflow-x: hidden;
+		max-width: 100%;
+		padding: 0 0px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+	}
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-size: 100px;
+} */
+
+p, a, li, button, ul {
+  /* margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none; */
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media (max-width:400px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 0px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+	}
+}
+
+p.success {
+	color: green;
+}
+
+p.danger {
+	color: red;
+}

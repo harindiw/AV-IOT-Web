@@ -1,0 +1,195 @@
+/* General styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff; 
+  } */
+  
+  .contact-us-container {
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    background: #001125;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Header styles */
+  /* .box {
+    background: linear-gradient(to right, #2c3e50, #3498db); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  } */
+
+  .box {
+    background-image: linear-gradient(to right, #2c3e50, #3498db), url('');
+    background-size: cover; /* Adjust the background image size */
+    background-position: center; /* Center the background image */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  .text {
+    padding: 50px 0;
+  }
+  
+  .text h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .text p {
+    font-size: 20px;
+  }
+  
+  .red {
+    color: #e74c3c;
+  }
+  
+  .redline {
+    width: 100px;
+    height: 3px;
+    background-color: #e74c3c;
+    border: none;
+    margin: 20px auto;
+  }
+  
+  .touch h2 {
+    font-size: 32px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Form styles */
+  .contactcontainer {
+    margin-top: 20px;
+    background-color: #00071f;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .btn-success {
+    background-color: #0e2792;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-success:hover {
+    background-color: #326ea3;
+  }
+  
+  /* Address styles */
+  .address {
+    padding-top: 50px;
+  }
+  
+  .address h3 {
+    font-weight: bold;
+    color: #333;
+    font-size: 29px;
+    text-align: center;
+  }
+  
+  .redline-address {
+    border: none;
+    height: 3px;
+    background-color: #e74c3c;
+    width: 140px;
+    margin: 20px auto;
+  }
+  
+  .address p {
+    /* font-weight: bold; */
+    color: #676565;
+    margin: 3px 0;
+  }
+  
+  .phone-e {
+    padding: 15px 0;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: 150px;
+    z-index: 2;
+    float: left;
+    margin-top: 10px;
+  }
+  
+  .bottom-gap {
+    margin-bottom: 100px;
+  }
+  
+  /* Validation styles */
+  .ng-valid {
+    background-color: #dff0d8;
+  }
+  
+  .ng-invalid {
+    background-color: #f2dede;
+  }
+  
+  .ng-pristine {
+    background-color: white;
+  }
+  
+  textarea.ng-invalid {
+    background-color: #f2dede;
+  }
+  
+  textarea.ng-pristine {
+    background-color: white;
+  }
+  
+  textarea.ng-valid {
+    background-color: #dff0d8;
+  }
+  
+  /* Additional colors */
+  .outline-color {
+    outline-color: #4FEED2; /* Outline color */
+  }
+  
+  .color-1 {
+    color: #4FEED2; /* Color 1 */
+  }
+  
+  .color-2 {
+    color: #727FFF; /* Color 2 */
+  }
+  
+  .color-3 {
+    color: #3FA1FB; /* Color 3 */
+  }
+  

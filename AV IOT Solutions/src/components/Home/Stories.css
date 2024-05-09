@@ -1,0 +1,71 @@
+:root {
+  --magnifier: 6;
+  --gap: 1vmin;
+  --transition: 0.5s;
+}
+  
+.project_container {    
+  width: 80vw;
+  height: 50vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  margin: auto; /* Center the container horizontally */
+  background-color: #f0f0f000; /* Set the background color */
+}
+
+
+
+.project_img {
+  --brightness: 0.75;
+  --grayscale: 1;
+  transition: flex 0.5s ease-in-out, filter 0.5s ease-in-out,opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Adjust transition duration */
+  height: 100%;
+  /* filter: grayscale(var(--grayscale)) brightness(var(--brightness)); */
+  object-fit: cover;
+  overflow: hidden;
+  flex: 1;
+
+  opacity: 0;
+  transform: translateY(50px); /* Initially move images down */
+
+}
+
+.project_img:hover {
+  --brightness: 1.15;
+  --grayscale: 0;
+  flex: var(--magnifier);
+}
+
+.projects{
+  padding-top: 30px;
+  padding-top: 125px;
+  height: 584px;
+  background-image: url('../../assets/img/projectBG.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+  
+}
+@media screen and (max-width: 600px) {
+  .projects {
+    height: 410px;
+  }
+}
+
+.project_h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 36px; /* Adjust font size as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for depth */
+  letter-spacing: 1px; /* Add letter spacing for better readability */
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+
+.project_img.appear {
+  opacity: 1;
+  transform: translateY(0); /* Move images to their original position */
+}

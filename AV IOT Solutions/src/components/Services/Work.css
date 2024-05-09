@@ -1,0 +1,114 @@
+#work{
+    background-color: #001125;
+  min-height: 80vh;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.work-h{
+    color: white;
+    text-align: center;
+    margin-top: 92px;
+}
+.work-h1{
+    text-align: center;
+    font-size: 32px;
+    color: #8591B5;
+    
+}
+
+
+
+
+/* work-cards */
+  /* Float four work-.work-columns side by side */
+  .work-column {
+    float: left;
+    width: 31%;
+    padding: 0 30px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    /* margin: -64px 0px; */
+    /* width: 1792px; */
+    /* min-height: 80vh; */
+    background: #001125;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+    margin: -50px 0px;
+    width: 100%;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    padding-top: 116px;
+}
+/* 
+  .row-st {
+      background: #001125;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: auto;
+      margin: -43px 0px;
+  } */
+    
+
+  /* Clear floats after the work-.work-columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive work-.work-columns */
+  @media screen and (max-width: 600px) {
+    .work-column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .work{
+      padding-left: 100px;
+    }
+  }
+  
+  /* Style the counter work-cards */
+  .work-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff28;
+    border-radius: 20px;
+    /* background-image: url('../assets/img/work-card.png'); */
+    height: 208px;
+    width: 360px;
+    /* width: 300px; */
+    /* box-shadow: inset 0 0 10px #05C7F2;
+    clip-path: polygon(0% 40px, 40px 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0px 100%); */
+  }
+  
+  .card-blue{
+    color: #3FA1FB;
+    font-size: 35px;
+  }
+  
+  .card-green{
+    color: #4FEED2;
+    font-size: 35px;
+  }
+  
+  .card-purple{
+    color: #727FFF;
+    font-size: 35px;
+  }
+
+  .card-para {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    padding-top: 10px;
+  }
