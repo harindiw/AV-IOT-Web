@@ -34,7 +34,7 @@ export const Footer = () => {
 
     <div class="col-sm">
       <p className="mblue">Quick links</p>
-      <p><a href="/Home"
+      <p><a href="/"
           className={activeLink === 'home' ? 'footer-link active' : 'footer-link'}
           onClick={() => handleSetActiveLink('home')} > Home </a></p>
       <p><a href="Service"
@@ -50,12 +50,6 @@ export const Footer = () => {
           className={activeLink === 'contact' ? 'footer-link active' : 'footer-link'}
           onClick={() => handleSetActiveLink('about')} > Contact </a></p>
 
-      {/* <p><NavLink exact to="/" className="white" activeClassName="active-link">Home</NavLink></p>
-      <Nav.Link href="/Services" className={activeLink === 'Services' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Services')}>Services</Nav.Link>
-      <p><NavLink exact to = "/Services" className="white" activeClassName= "active-link">Services</NavLink></p>
-      <p><NavLink exact to = "/AboutUs" className="white" activeClassName= "active-link">About Us</NavLink></p>
-      <p><NavLink exact to = "/Blog" className="white" activeClassName= "active-link">Blog</NavLink></p>
-      <p><NavLink exact to = "/Contact" className="white" activeClassName= "active-link">Contact</NavLink></p>*/}
     </div>
     
     <div class="col-sm">
