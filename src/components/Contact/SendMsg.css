@@ -27,7 +27,7 @@
     border-bottom:2px solid #bebed2
   }
   input:focus{
-    border-bottom:2px solid #78788c
+    border-bottom:2px solid ##8591b5
   }
   p:before{
     content:attr(type);
@@ -78,17 +78,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 button {
   overflow: visible;
 }
@@ -113,10 +102,12 @@ textarea {
 }
 
 #contact-container {
-  border: solid 3px #ffffff;
+  border: solid 3px #3FA1FB;
   max-width: 768px;
   margin: 60px auto;
   position: relative;
+  border-radius: 10px;
+
 }
 
 form {
@@ -125,18 +116,20 @@ form {
 }
 
 .contact-h1 {
-  color: #ffffff;
+  color: #3FA1FB;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 7px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 20px;
 }
 
 .underline {
-  border-bottom: solid 2px #ffffff;
+  border-bottom: solid 2px #3FA1FB;
+  padding-top: 5px;
   margin: -0.512em auto;
-  width: 80px;
+  width: 500px;
 }
 
 .email {

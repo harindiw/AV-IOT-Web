@@ -14,14 +14,16 @@ export const Contact = () => {
         <h2 className="contact-para">Book a free consultation with one of our specialists, So that we can discuss how
           AV IOT Solutions can help your business to build the product you have in mind.</h2>
 
+        <p>
         <a href="/Explore">
           <button className="vvd"><span>Book a free consultation</span></button>
-        </a>
+        </a></p>
 
-
-        <a href="/SendMsg" className="msg-a" >Or Send Us a Message</a>
+        <p>
+        <a href="/SendMsg" className="msg-a" >Or Send Us a Message</a></p>
         <SendMsg />
         <a className="invisible" >Or Send Us a Message</a>
+        
 
 
 
