@@ -5,16 +5,16 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { IoLogoYoutube } from "react-icons/io";
 
-import { NavLink } from 'react-router-dom';
+
 import React, { useState } from 'react';
 
 import "./Footer.css";
-import { Nav } from 'react-bootstrap';
+
 
 export const Footer = () => {
   const [activeLink, setActiveLink] = useState('home');
 
-  const handleSetActiveLink = (value) => {
+  const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
 
@@ -34,22 +34,23 @@ export const Footer = () => {
 
     <div class="col-sm">
       <p className="mblue">Quick links</p>
+      <div class = "footerNav" >
       <p><a href="/"
-          className={activeLink === 'home' ? 'footer-link active' : 'footer-link'}
-          onClick={() => handleSetActiveLink('home')} > Home </a></p>
+          className={activeLink === '/' ? 'footer-link active' : 'footer-link'}
+          onClick={() => onUpdateActiveLink('/')} > Home </a></p>
       <p><a href="Service"
-          className={activeLink === 'service' ? 'footer-link active' : 'footer-link'}
-          onClick={() => handleSetActiveLink('service')} > Services </a></p>
+          className={activeLink === 'Service' ? 'footer-link active' : 'footer-link'}
+          onClick={() => onUpdateActiveLink('Service')} > Services </a></p>
       <p><a href="Abouthome"
-          className={activeLink === 'about' ? 'footer-link active' : 'footer-link'}
-          onClick={() => handleSetActiveLink('about')} > About Us </a></p>
+          className={activeLink === 'Abouthome' ? 'footer-link active' : 'footer-link'}
+          onClick={() => onUpdateActiveLink('Abouthome')} > About Us </a></p>
       <p><a href="Blog"
-          className={activeLink === 'blog' ? 'footer-link active' : 'footer-link'}
-          onClick={() => handleSetActiveLink('blog')} > Blog </a></p>
+          className={activeLink === 'Blog' ? 'footer-link active' : 'footer-link'}
+          onClick={() => onUpdateActiveLink('Blog')} > Blog </a></p>
       <p><a href="Contact"
-          className={activeLink === 'contact' ? 'footer-link active' : 'footer-link'}
-          onClick={() => handleSetActiveLink('about')} > Contact </a></p>
-
+          className={activeLink === 'Contact' ? 'footer-link active' : 'footer-link'}
+          onClick={() => onUpdateActiveLink('Contact')} > Contact </a></p>
+      </div>
     </div>
     
     <div class="col-sm">
@@ -67,45 +68,4 @@ export const Footer = () => {
 
 export default Footer; 
 
-{/*}
-import React, { useState } from 'react';
-import './Footer.css';
 
-const Footer = () => {
-  const [activeLink, setActiveLink] = useState('home');
-
-  const handleSetActiveLink = (value) => {
-    setActiveLink(value);
-  };
-
-  return (
-    <footer className="footer">
-      <div className="navigation-links">
-        <a
-          href="#home"
-          className={activeLink === 'home' ? 'footer-link active' : 'footer-link'}
-          onClick={() => handleSetActiveLink('home')}
-        >
-          Home
-        </a>
-        <a
-          href="#services"
-          className={activeLink === 'services' ? 'footer-link active' : 'footer-link'}
-          onClick={() => handleSetActiveLink('services')}
-        >
-          Services
-        </a>
-        <a
-          href="#about"
-          className={activeLink === 'about' ? 'footer-link active' : 'footer-link'}
-          onClick={() => handleSetActiveLink('about')}
-        >
-          About Us
-        </a>
-        {/* Add more links as needed 
-      </div>
-    </footer>
-  );
-}
-
-export default Footer;   */}
