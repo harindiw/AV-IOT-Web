@@ -26,7 +26,7 @@ export const Footer = () => {
     <p className="footer-p">We are pioneers in utilizing the potential of IoT technology to transform how organizations and people engage with the real world.</p>
     <div className="footer-icon">
         <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><FaGoogle className="icon1" /></a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedinIn className="icon2" /></a>
+        <a href="https://www.linkedin.com/company/av-iot/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn className="icon2" /></a>
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><GrInstagram className="icon3" /></a>
         <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><IoLogoYoutube className="icon4" /></a>
       </div>

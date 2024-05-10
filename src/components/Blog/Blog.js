@@ -17,7 +17,7 @@ import { Subscribe } from "./Subscribe";
         <div class="about-column">
           <div class="card-a">
           <div class="card-img">
-            <img className="logo" src={blog} alt=""/>
+            <img className="bloglogo" src={blog} alt=""/>
           </div>
             <div className="blog-h">
             <p className="blog-white">Unlocking the Potential of IoT in Healthcare</p>
