@@ -22,7 +22,11 @@ nav.navbar {
     font-size: 18px;
     opacity: 0.75;
   }
-  nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+  nav.navbar .navbar-nav a.nav-link.navbar-link:hover{
+    opacity: 1;
+    font-weight: bolder;
+  }
+
   nav.navbar .navbar-nav a.nav-link.navbar-link.active {
       opacity: 1;
   }
