@@ -1,8 +1,8 @@
 nav.navbar {
     padding: 18px 0;
     position: fixed;
-    width: 100%;
-    top: 0;
+    inline-size: 100%;
+    inset-block-start: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
   }
@@ -11,7 +11,7 @@ nav.navbar {
     background-color: #121212;
   }
   nav.navbar a.navbar-brand {
-    width: 9%;
+    inline-size: 9%;
   }
 
   nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -41,16 +41,16 @@ nav.navbar {
 
   .social-icon {
       display: inline-block;
-      margin-left: 14px;
+      margin-inline-start: 14px;
   }
 
   .social-icon a {
-      width: 42px;
-      height: 42px;
+      inline-size: 42px;
+      block-size: 42px;
       background: rgba(217, 217, 217, 0.1);
       display: inline-flex;
       border-radius: 50%;
-      margin-right: 6px;
+      margin-inline-end: 6px;
       align-items: center;
       justify-content: center;
       line-height: 1;
@@ -58,8 +58,8 @@ nav.navbar {
   }
   .social-icon a::before {
       content: "";
-      width: 42px;
-      height: 42px;
+      inline-size: 42px;
+      block-size: 42px;
       position: absolute;
       background-color: #ffffff;
       border-radius: 50%;
@@ -72,7 +72,7 @@ nav.navbar {
   }
 
   .social-icon a img {
-      width: 40%;
+      inline-size: 40%;
       z-index: 1;
       transition: 0.3s ease-in-out;
   }
@@ -87,7 +87,7 @@ nav.navbar {
     border: 1px solid #fff;
     padding: 18px 34px;
     font-size: 18px;
-    margin-left: 18px;
+    margin-inline-start: 18px;
       position: relative;
       background-color: transparent;
       transition: 0.3s ease-in-out;
@@ -96,14 +96,15 @@ nav.navbar {
   .navbar-text button span {
     z-index: 1;
   }
+  
   .navbar-text button::before {
     content: "";
-    width: 0%;
-    height: 100%;
+    inline-size: 0%;
+    block-size: 100%;
     position: absolute;
     background-color: #fff;
-    left: 0;
-    top: 0;
+    inset-inline-start: 0;
+    inset-block-start: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
   }
@@ -112,8 +113,8 @@ nav.navbar {
   }
   .navbar-text button:hover::before {
       content: "";
-      width: 100%;
-      height: 100%;
+      inline-size: 100%;
+      block-size: 100%;
       position: absolute;
   }
   nav.navbar .navbar-toggler:active,
@@ -122,54 +123,54 @@ nav.navbar {
       box-shadow: none;
   }
   nav.navbar .navbar-toggler-icon {
-    width: 24px;
-    height: 17px;
+    inline-size: 24px;
+    block-size: 17px;
     background-image: none;
     position: relative;
-    border-bottom: 2px solid #fff;
+    border-block-end: 2px solid #fff;
     transition: all 300ms linear;
-    top: -2px;
+    inset-block-start: -2px;
   }
   nav.navbar .navbar-toggler-icon:focus {
-      border-bottom: 2px solid #fff;
+      border-block-end: 2px solid #fff;
   }
   nav.navbar .navbar-toggler-icon:after,
   nav.navbar .navbar-toggler-icon:before {
-      width: 24px;
+      inline-size: 24px;
       position: absolute;
-      height: 2px;
+      block-size: 2px;
       background-color: #fff;
-      top: 0;
-      left: 0;
+      inset-block-start: 0;
+      inset-inline-start: 0;
       content: '';
       z-index: 2;
       transition: all 300ms linear;
   }
   nav.navbar .navbar-toggler-icon:after {
-      top: 8px;
+      inset-block-start: 8px;
   }
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
       transform: rotate(45deg);
       background-color: #fff;
-      height: 2px;
+      block-size: 2px;
   }
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
       transform: translateY(8px) rotate(-45deg);
       background-color: #fff;
-      height: 2px;
+      block-size: 2px;
   }
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       border-color: transparent;
   }
   .logo{
-    padding-left: 35px;
-    width: 186.6px;
-    height: 48.6px;
+    padding-inline-start: 35px;
+    inline-size: 186.6px;
+    block-size: 48.6px;
   }
 
 
 
-  @media (max-width: 600px) {
+  @media (max-inline-size: 600px) {
     .navbar-toggler {
       display: block !important; /* Override any other styles */
     }
@@ -190,20 +191,20 @@ nav.navbar {
 .navbar-link::after {
   content: '';
   position: absolute;
-  bottom: -2px; /* Adjust as needed */
-  left: 0;
-  width: 0;
-  height: 2px;
+  inset-block-end: -2px; /* Adjust as needed */
+  inset-inline-start: 0;
+  inline-size: 0;
+  block-size: 2px;
   background-color: #fff; /* White line color */
   transition: width 0.3s ease-in-out; /* Animation duration */
 }
 
 .navbar-link:hover::after {
-  width: 100%;
+  inline-size: 100%;
 }
 
 /* .active::after {
-  width: 100%;
+  inline-size: 100%;
 } */
 
 /* Animation to make the line come from the left side */
