@@ -110,26 +110,107 @@ useEffect(() => {
           <div class="col-sm">
             <img className="logo1" src={logo2} alt="" />
             {/* <h4>Explore working with AV IOT Solutions</h4><br></br> */}
+            <div className='exdiv'>
             <br></br><h5><b><HiOutlineVideoCamera /></b>&emsp; 30 min</h5><br></br>
             <h5><b><FaRegClock /></b>&emsp; Web conferencing details provided upon confirmation.</h5>
+            </div>
+            
           </div>
           <div class="col-sm">
           
   <div class="contianer">
-  <div className={`calendar ${isDarkMode ? 'dark' : 'light'}`}>
-            <div className="calendar-header">
-                <span className="month-picker" onClick={handleMonthClick}>{monthNames[currMonth]}</span>
-                {showMonthList && <MonthList monthNames={monthNames} handleMonthSelection={handleMonthSelection} />}
-                <div className="year-picker">
-                    <span className="year-change" onClick={handlePrevYear}>{"<"}</span>
-                    <span id="year">{currYear}</span>
-                    <span className="year-change" onClick={handleNextYear}>{">"}</span>
-                </div>
-            </div>
-            <div className="calendar-body">
-                {generateCalendar()}
-            </div>
+  <div class="formbold-main-wrapper">
+
+  <div class="formbold-form-wrapper">
+    <form action="https://formbold.com/s/FORM_ID" method="POST">
+      <div class="formbold-input-wrapp formbold-mb-3">
+{/* name */}
+        <div>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="First name"
+            class="formbold-form-input"
+          />
+
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Last name"
+            class="formbold-form-input"
+          />
         </div>
+      </div>
+{/* email */}
+      <div class="formbold-mb-3">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@email.com"
+          class="formbold-form-input"
+        />
+      </div>
+
+      {/* Phone */}
+      <div class="formbold-mb-3 formbold-input-wrapp">
+
+        <div>
+          
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Phone number"
+            class="formbold-form-input"
+          />
+        </div>
+      </div>
+
+      {/* company */}
+      <div class="formbold-mb-3">
+        <input
+          type="text"
+          name="company"
+          id="company"
+          placeholder="company name"
+          class="formbold-form-input"
+        />
+      </div>
+
+        {/* company */}
+        <div class="formbold-mb-3">
+        <input
+          type="textarea"
+          name="build"
+          id="build"
+          placeholder="What are you planning to build"
+          class="formbold-form-input"
+        />
+      </div>
+
+{/* data  */}
+      <div class="formbold-mb-3">
+        <input type="date" name="dob" id="dob" class="formbold-form-input" />
+      </div>
+
+      <div class="formbold-mb-3">
+        <input type="time" name="time" id="time" class="formbold-form-input" />
+      </div>
+
+
+
+
+
+   
+
+      <button class="formbold-btn">Submit</button>
+    </form>
+  </div>
+</div>
+
   </div>
           </div>
         </div>
