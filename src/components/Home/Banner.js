@@ -34,7 +34,7 @@ export const Banner = () => {
           Your browser does not support HTML5 video.
         </video> */}
    
-        <div className="heading"><h1 className="line1">Develop Your Enterprice</h1><br></br>
+        <div className="heading"><h1 className="line1">Develop Your Enterprise</h1><br></br>
           <h1 className="line2">With<br></br></h1><h1 className="line3">Internet of Things</h1>
         </div>
 

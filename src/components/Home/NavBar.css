@@ -28,6 +28,10 @@ nav.navbar {
       opacity: 1;
   }
 
+  nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    color: aqua;
+  }
+
   span.navbar-text {
     display: flex;
     align-items: center;
@@ -88,9 +92,9 @@ nav.navbar {
     padding: 18px 34px;
     font-size: 18px;
     margin-inline-start: 18px;
-      position: relative;
-      background-color: transparent;
-      transition: 0.3s ease-in-out;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
   }
   
   .navbar-text button span {

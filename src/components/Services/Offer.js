@@ -61,9 +61,7 @@ return (
       <h1 className="work-h1">Working with us is simple! </h1>
 
       <div className="slideshow-container">
-
-
-
+        
       <div className="mySlides">
   <div className="rowff">
     <div className="colff">
