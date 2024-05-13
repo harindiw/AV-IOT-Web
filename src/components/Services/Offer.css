@@ -5,158 +5,115 @@
   padding-top: 80px;
 }
 
-#circle {
-  margin-top: 10px;
-  width: 800px; /* Set width */
-  height: 800px; /* Set height */
-  border: 3px solid rgba(255, 255, 255, 0.342); /* Set white border */
-  border-radius: 50%; /* Make it a circle */
-  margin: auto; /* Center the circle */
-  box-sizing: border-box; /* Include border in width and height */
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
 }
 
-@media screen and (max-width: 768px) {
-  #circle {
-    width: 1vw; /* Adjust width for smaller screens */
-    height: 474px
-  }
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
 }
 
-
-.first{
-  display: -webkit-inline-box;
-  padding-top: 48px;
-}
-.offer-h1 {
-  background-color: #00112500;
-  color: #727FFF;
-  font-size: 82px;
-  padding-left: 0px;
-}
-
-.offer-h2 {
-  background-color: #00112500;
-  color: #727FFF;
-  font-size: 82px;
-  padding-left: 322px;
-}
-
-
-.middle{
-  display: -webkit-inline-box;
-  padding-top: 208px;
-}
-.offer-h3 {
-  background-color: #00112500;
-  color: #727FFF;
-  font-size: 82px;
-  margin-left: -236px;
-  padding-left: 235px;
-}
-
-.offer-h4 {
-  background-color: #00112500;
-  color: #727FFF;
-  font-size: 82px;
-  /* padding-top: 174px; */
-  padding-left: 630px;
-}
-
-.last{
-  display: -webkit-inline-box;
-  padding-top: 166px;
-}
-
-.offer-h5 {
-  background-color: #00112500;
-  color: #727FFF;
-  font-size: 82px;
-  padding-left: 0px;
-}
-
-.offer-h6 {
-  background-color: #00112500;
-  color: #727FFF;
-  font-size: 82px;
-  padding-left: 322px;
-}
-
-
-
-
-
-
-.first, .middle, .last {
-  display: flex;
-  justify-content: center; /* Center items horizontally */
-}
-
-.offer-h1, .offer-h2, .offer-h3, .offer-h4, .offer-h5, .offer-h6 {
-  background-color: #00112500;
-  color: aliceblue;
-  font-size: 82px;
-}
-
-@media screen and (max-width: 600px) {
-  /* .container {
-    flex-direction: row; /* Change to row layout for smaller screens 
-  } */
-  
-  .first, .middle, .last {
-    padding-top: 44px /* Remove padding on smaller screens */
-  }
-
-  .offer-h1, .offer-h2, .offer-h3, .offer-h4, .offer-h5, .offer-h6 {
-    font-size: 70px;
-    padding-left: 0px; /* Adjust padding for smaller screens */
-    padding-right: 19px; /* Adjust padding for smaller screens */
-  }
-
-  .offer-h3, .offer-h4{
-    padding-left: 0px; /* Adjust padding for smaller screens */
-    padding-right: 19px;
-    margin-left: -8px;
-  }
-
-  .offerh{
-    font-size: 18px;
-    margin-left: -7px;
-  }
- 
-}
-
-
-
-
-
-.offerh{
-  color: aliceblue;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
   font-size: 20px;
-  margin-left: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-#offer-circle{
-  width: 100%;
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.hov {
-  padding-top: 0px;
-  padding-left: 32px;
-  min-width: 332px;
-  height: 84px;
-  color: #001125;
-  /* color: #727FFF; */
-  font-size: 25px;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
 }
 
-.hov2 {
-  padding-top: 0px;
-  padding-left: 0px;
-  margin-right: 371px;
-  padding-right: 0px;
-  min-width: 281px;
- color: #001125;
-  height: 84px;
-  /* color: #727FFF; */
-  font-size: 25px;
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #001125;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+.rowff {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.colff {
+  flex: 1 1;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+.mySlides {
+  background-color: #001125;
+}
+.off-h1{
+  font-size: 28px;
+  color: #3FA1FB;
+}
+.off-p1{
+  font-size: 20px;
+  color: #3FA1FB;
+}
+.off-h2{
+  font-size: 28px;
+  color: #4FEED2;
+}
+.off-p2{
+  font-size: 20px;
+  color: #4FEED2;
+}
+
+a:not([href]):not([tabindex]) {
+  color: #ffffff;
+  text-decoration: none;
 }
