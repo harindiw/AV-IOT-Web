@@ -1,7 +1,7 @@
 import React , { useRef } from "react";
 // import Star from './Star.png';
 import "./Subscribe.css";
-import Star from './Star.png';
+//import Star from './Star.png';
 import emailjs from '@emailjs/browser';
 
 export const Subscribe = () => {
@@ -27,7 +27,10 @@ export const Subscribe = () => {
 
 
     return (
+
         <div class="subscribe">
+			<p></p>
+			<p></p>
 			<div class="sub">
 
 			{/* <img className="img" src={Star} alt=""/>

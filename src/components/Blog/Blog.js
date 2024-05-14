@@ -13,11 +13,18 @@ import { Subscribe } from "./Subscribe";
 <div>
     <div id="a-home">
 
+      <p></p>
+      <p></p>
+      
+
+
     <div class="row">
+
+    <p></p>
         <div class="about-column">
           <div class="card-a">
           <div class="card-img">
-            <img className="bloglogo" src={blog} alt=""/>
+            <img className="logo" src={blog} alt=""/>
           </div>
             <div className="blog-h">
             <p className="blog-white">Unlocking the Potential of IoT in Healthcare</p>
