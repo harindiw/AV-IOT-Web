@@ -28,10 +28,6 @@ nav.navbar {
       opacity: 1;
   }
 
-  nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    color: aqua;
-  }
-
   span.navbar-text {
     display: flex;
     align-items: center;
