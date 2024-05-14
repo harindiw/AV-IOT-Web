@@ -19,18 +19,14 @@ export const Contact = () => {
           <button className="vvd"><span>Book a free consultation</span></button>
         </a></p>
 
+        <br></br>
+        
         <p>
-        <a href="/SendMsg" className="msg-a" >Or Send Us a Message</a></p>
+        <h3 className="msg-a" >Or</h3></p>
         <SendMsg />
         <a className="invisible" >Or Send Us a Message</a>
         
-
-
-
-
-
-
-      </div>
+</div>
 
     </div>
   );

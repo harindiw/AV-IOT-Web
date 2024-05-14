@@ -4,7 +4,7 @@
     text-align: left;
     padding-top: 165px;
     padding-left: 100px;
-
+    animation: slideFromBottom ;
 }
 
 .contact-para{
@@ -116,9 +116,6 @@
     margin-top: 27px;
   }
 
-  .msg-a:hover{
-    color: #3FA1FB;
-  }
 
   @media screen and (max-width: 768px) {
     .contact-h {

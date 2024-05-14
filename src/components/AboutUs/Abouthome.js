@@ -15,11 +15,11 @@ import React from 'react';
 
   <div class="row">
     <div class="col-sm">
-    <h3 className="About-subh">testimonials</h3>
+    <h3 className="About-subh">Our Mission</h3>
         <p className="About-subp1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
     </div>
     <div class="col-sm">
-    <h3 className="About-subh">testimonials</h3>
+    <h3 className="About-subh">Our Vision</h3>
     <p className="About-subp2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
     </div>
    

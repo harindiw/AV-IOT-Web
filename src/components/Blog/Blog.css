@@ -2,6 +2,13 @@
     background-color: #001125;
 }
 
+h1.topic{
+  padding-top: 100px;
+  color: #8591B5;
+  font-weight: 600;
+  animation: forwards 1s ease-in;
+}
+
 .about-column {
     float: left;
     width: 25%;
@@ -73,9 +80,6 @@
     padding-top: 15px; 
   }
 
-
-
-  
   /* .card-img {
     position: relative;
     margin: auto;

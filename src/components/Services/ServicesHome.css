@@ -43,3 +43,6 @@
     }
   }
 
+.header-h, .header-p{
+  animation: slideFromLeft 1s ease-in-out forwards;
+}

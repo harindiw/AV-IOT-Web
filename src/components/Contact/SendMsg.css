@@ -100,6 +100,11 @@ textarea {
   overflow: auto;
 }
 
+.contact{
+  width: 100%;
+  
+}
+
 #contact-container {
   border: solid 3px #3FA1FB;
   max-width: 768px;
@@ -256,8 +261,8 @@ textarea {
 
 @media screen and (max-width: 768px) {
   #contact-container {
-    margin: 20px auto;
-    width: 95%;
+    /*margin: 20px auto;*/
+    max-width: 100%;
   }
 }
 

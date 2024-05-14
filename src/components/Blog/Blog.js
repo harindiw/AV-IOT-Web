@@ -12,15 +12,14 @@ import { Subscribe } from "./Subscribe";
   return (
 <div>
     <div id="a-home">
-
-      <p></p>
-      <p></p>
       
+    <div >
+        <h1 class="topic">The Latest News  & Blogs</h1>
+      </div> 
 
 
     <div class="row">
 
-    <p></p>
         <div class="about-column">
           <div class="card-a">
           <div class="card-img">
