@@ -2,7 +2,8 @@
     background-color: #001125;
 }
 
-h1.topic{
+h1.topic {
+  padding-left: 44px;
   padding-top: 100px;
   color: #8591B5;
   font-weight: 600;

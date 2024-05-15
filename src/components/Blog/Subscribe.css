@@ -49,25 +49,28 @@
 }
 
 .subscribe__copy {
-	max-width: 450px;
-	text-align: center;
-	margin-bottom: 53px;
-	line-height: 1.5;
-	color: #CAD3DB;
+    max-width: 450px;
+    text-align: left;
+    /* margin-bottom: 53px; */
+    line-height: 1.5;
+    font-size: 20px;
+    color: #CAD3DB;
 }
 
 .form {
     padding-top: 20px;
-	margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
+
 .form__email {
-	padding: 20px 25px;
-	border-radius: 10px;
- 	border: 1px solid #CAD3DB;
-	width: 750px;
-	font-size: 18px;
-	color: #0F121F;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 1px solid #CAD3DB;
+    width: 599px;
+    margin: 11px;
+    font-size: 18px;
+    color: #0F121F;
 }
 
 .form__email:focus {

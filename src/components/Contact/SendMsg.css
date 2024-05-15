@@ -106,7 +106,7 @@ textarea {
 }
 
 #contact-container {
-  border: solid 3px #3FA1FB;
+  border: solid 3px #ffffff;
   max-width: 768px;
   margin: 60px auto;
   position: relative;
@@ -116,11 +116,11 @@ textarea {
 
 form {
   padding: 37.5px;
-  margin: 50px 0;
+  /* margin: 50px 0; */
 }
 
 .contact-h1 {
-  color: #3FA1FB;
+  color: #ffffff;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -130,7 +130,7 @@ form {
 }
 
 .underline {
-  border-bottom: solid 2px #3FA1FB;
+  border-bottom: solid 2px #ffffff;
   padding-top: 5px;
   margin: -0.512em auto;
   width: 500px;
@@ -229,7 +229,7 @@ textarea {
   inline-size: 400px;
   text-align: center;
   border-radius: 10px;
-  color: #3FA1FB;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;
