@@ -21,7 +21,7 @@ export const Home = () => {
 <Stats />
 {/* <Features /> */}
 <Stories />
-{/* <Review /> */}
+<Review />
 
 </div>
   );
