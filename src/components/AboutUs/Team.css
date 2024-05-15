@@ -54,15 +54,15 @@
 
   .flip-front-team-card-img, .flip-card-back {
     position: absolute;
-      inline-size: 300px;
-      block-size: 200px;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border-radius: 15px; 
+    inline-size: 300px;
+    block-size: 200px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px; 
     }
     
   .flip-front-team-card-img {
-      text-align: center;
+    text-align: center;
     block-size: 200px;
     inline-size: 300px;
     background-size: cover;
@@ -70,8 +70,8 @@
   }
     
   .flip-card-back {
-      background-color: #000E41;
-      text-align: center;
+    background-color: #000E41;
+    text-align: center;
     block-size: 200px;
     inline-size: 300px;
     background-size: cover;
@@ -130,13 +130,4 @@
     font-weight:lighter;
   }
 
-  .social{
-    color: #3FA1FB;
-    inline-size: 25px;
-    block-size: 25px;
-    margin-block-start: 30px;
-  }
 
-  .i1, .i2{
-    margin-inline-end: 10px;
-  }

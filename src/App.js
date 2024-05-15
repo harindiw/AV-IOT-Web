@@ -13,7 +13,6 @@ import { SendMsg } from "./components/Contact/SendMsg"
 
 import { ToastContainer } from "react-toastify";
 
-
 function App() {
   return (
     <div className="App">
@@ -36,5 +35,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

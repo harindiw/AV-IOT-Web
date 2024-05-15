@@ -23,12 +23,7 @@ import React from 'react';
            </div>
         </div>
         </div>
-        <div class= "social">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin className="i1" /></a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">< FaFacebook className="i2" /> </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">< BsTwitterX className="i3" /> </a>
-        </div>
-        </div>
+         </div>
       
         <div class="about-column">
           <div class="flip-card">
@@ -41,12 +36,7 @@ import React from 'react';
             </div>
           </div>
         </div>
-        <div class= "social">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin className="i1" /></a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">< FaFacebook className="i2" /> </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">< BsTwitterX className="i3" /> </a>
-        </div>
-        </div>
+         </div>
         
         <div class="about-column">
           <div class="flip-card">
@@ -59,10 +49,6 @@ import React from 'react';
             </div>
           </div>
         </div>
-        <div class= "social">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin className="i1" /></a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">< FaFacebook className="i2" /> </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">< BsTwitterX className="i3" /> </a>
         </div>
       </div>
       
@@ -78,11 +64,6 @@ import React from 'react';
               </div>
           </div>
         </div>
-        <div class= "social">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin className="i1" /></a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">< FaFacebook className="i2" /> </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">< BsTwitterX className="i3" /> </a>
-        </div>
         </div>
       
         <div class="about-column">
@@ -96,7 +77,6 @@ import React from 'react';
               </div>
           </div>
         </div>
-        <p className="green"><FaLinkedin /> &nbsp; <FaFacebook /> &nbsp; <BsTwitterX /></p>
         </div>
         
         <div class="about-column">
@@ -111,13 +91,11 @@ import React from 'react';
             </div>
           </div>
         </div>
-        <p className="blue"><FaLinkedin /> &nbsp; <FaFacebook /> &nbsp; <BsTwitterX /></p>
         </div>
-        
-      </div> 
+        </div> 
 
 
-</div>
+
 </div>
   );
 };
