@@ -1,6 +1,4 @@
 import "./Team.css";
-import { FaLinkedin , FaFacebook } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
 import React from 'react';
 
 
@@ -16,10 +14,11 @@ import React from 'react';
           <div class="card-ab">
           <div class="flip-front-team-card-img img-1" > </div>
           <div class="flip-card-back">
-            <div className="blue1">Nishal Dayarathna </div>
+            <div className="blue1">Rachitha Muthukumarana </div>
             <div className="blue1">Director </div>
-            <p className="blue2">BSc.Eng(Hons) Electrical Engineering - University of Moratuwa</p>
-            <div className="blue2">MBA - University of Wales Trinity Saint David</div>
+            <p className="blue2">BSc.Eng(Hons) Mechanical Engineering - University of Moratuwa</p>
+            <div className="blue2">M.Eng - USA</div>
+            <div className="blue2">PhD - USA</div>
            </div>
         </div>
         </div>
@@ -30,9 +29,10 @@ import React from 'react';
             <div class="card-ab">
               <div class="flip-front-team-card-img img-2"> </div>
               <div class="flip-card-back">
-            <div className="green1">Nuwan Prasanna </div>
-            <div className="green1">Software Engineer </div>
-            <p className="green2">BET(Hons) Mechatronics Engineering Technology - University of Sri Jayewardenepura</p>
+              <div className="green1">Nishal Dayarathna </div>
+            <div className="green1">Director </div>
+            <p className="green2">BSc.Eng(Hons) Electrical Engineering - University of Moratuwa</p>
+            <div className="green2">MBA - University of Wales Trinity Saint David</div>
             </div>
           </div>
         </div>
