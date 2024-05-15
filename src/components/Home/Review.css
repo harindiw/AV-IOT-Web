@@ -34,26 +34,12 @@ a{
 }
 
 .re{
-  padding: 34px;
+  padding: 50px;
 }
-/* Add your other CSS styles as needed */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
 figure.snip1157 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
@@ -84,13 +70,14 @@ figure.snip1157 blockquote {
   display: block;
   border-radius: 8px;
   position: relative;
-  background-color: #fafafa;
+  background-color: #8591B5;
   padding: 25px 50px 30px 50px;
   font-size: 0.8em;
   font-weight: 500;
   margin: 0;
   line-height: 1.6em;
   font-style: italic;
+  color: #000000;
 }
 figure.snip1157 blockquote:hover {
   background-color: #fafafacd;
@@ -119,10 +106,15 @@ figure.snip1157 .arrow {
   height: 0;
   border-left: 0 solid transparent;
   border-right: 25px solid transparent;
-  border-top: 25px solid #fafafa;
+  border-top: 25px solid #8591B5;
   margin: 0;
   position: absolute;
 }
+
+figure.snip1157 .arrow :hover{
+  color: #fafafacd;
+}
+
 figure.snip1157 .author {
   position: absolute;
   bottom: 45px;
