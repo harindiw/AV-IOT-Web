@@ -3,6 +3,9 @@
 import "./SendMsg.css";
 import React ,{ useRef }from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
+
+import 'react-toastify/dist/ReactToastify.css';
 // import {useForm} from 'react-hook-form';
 
 export const SendMsg = () => {
@@ -17,10 +20,12 @@ export const SendMsg = () => {
 		})
 		.then(
 		  () => {
-			console.log('SUCCESS!');
+			// console.log('SUCCESS!');
+      toast.success("sucessfully sent to IOT SOlutions!");
 		  },
 		  (error) => {
 			console.log('FAILED...', error);
+      toast.error("not sent. try again!");
 		  },
 		);
 	};

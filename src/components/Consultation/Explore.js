@@ -1,106 +1,34 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
 import logo2 from './logo2.png';
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { FaRegClock } from "react-icons/fa";
 import './Explore.css';
 
-import MonthList from './MonthList';
-
 
 export const Explore = () => {
 
+  const form = useRef();
 
-
-  const [currMonth, setCurrMonth] = useState(new Date().getMonth());
-  const [currYear, setCurrYear] = useState(new Date().getFullYear());
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [showMonthList, setShowMonthList] = useState(false);
-  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-  const isLeapYear = (year) => {
-      return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
-  }
-
-  const getFebDays = (year) => {
-      return isLeapYear(year) ? 29 : 28;
-  }
-
-  const generateCalendar = () => {
-      const daysOfMonth = [31, getFebDays(currYear), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-      const firstDayOfMonth = new Date(currYear, currMonth, 1).getDay();
-      const today = new Date();
-      const calendarDays = [];
-
-      // Adjust the year and month for January to ensure correct calculation
-      const adjustedYear = currMonth === 0 ? currYear - 1 : currYear;
-      const adjustedMonth = currMonth === 0 ? 11 : currMonth - 1;
-      const prevMonthDays = new Date(adjustedYear, adjustedMonth, 0).getDate();
-
-      for (let i = firstDayOfMonth; i > 0; i--) {
-          calendarDays.push(
-              <div key={`empty-${i}`} className="empty-day">
-                  {prevMonthDays - (firstDayOfMonth - i)}
-              </div>
-          );
-      }
-
-      for (let i = 1; i <= daysOfMonth[currMonth]; i++) {
-          const isSelectedDay = today.getDate() === i && today.getMonth() === currMonth && today.getFullYear() === currYear;
-          calendarDays.push(
-              <div
-                  key={`day-${i}`}
-                  className={`calendar-day ${isSelectedDay ? 'selected' : ''}`}
-                  onClick={() => handleDayClick(i)}
-              >
-                  {i}
-              </div>
-          );
-      }
-
-
-      return (
-        <div className="calendar-days">
-            {calendarDays}
-        </div>
-    );
-}
-
-const handlePrevYear = () => {
-    setCurrYear(currYear - 1);
-}
-
-const handleNextYear = () => {
-    setCurrYear(currYear + 1);
-}
-
-const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-}
-
-const handleMonthClick = () => {
-    setShowMonthList(!showMonthList);
-}
-
-const handleMonthSelection = (monthIndex) => {
-    setCurrMonth(monthIndex);
-    setShowMonthList(false);
-}
-
-const handleDayClick = (day) => {
-    setCurrMonth(new Date().getMonth()); // Reset to current month
-    setCurrYear(new Date().getFullYear()); // Reset to current year
-    // Handle any other logic here based on the clicked day
-}
-
-// Function to automatically set the current date when the component mounts
-useEffect(() => {
-    const today = new Date();
-    setCurrMonth(today.getMonth());
-    setCurrYear(today.getFullYear());
-}, []);
-
-
+	const sendEmail = (e) => {
+	  e.preventDefault();
+  
+	  emailjs
+		.sendForm('service_brtgs93', 'template_b1oc0pl', form.current, {
+		  publicKey: 'mzx4wsWnJQ18NbxVl',
+		})
+		.then(
+		  () => {
+			// console.log('SUCCESS!');
+      toast.success("sucessfully sent to IOT SOlutions!");
+		  },
+		  (error) => {
+			console.log('FAILED...', error);
+      toast.error("not sent. try again!");
+		  },
+		);
+	};
 
 
   return (
@@ -122,22 +50,22 @@ useEffect(() => {
   <div class="formbold-main-wrapper">
 
   <div class="formbold-form-wrapper">
-    <form action="https://formbold.com/s/FORM_ID" method="POST">
+    <form ref={form} onSubmit={sendEmail} method="POST">
       <div class="formbold-input-wrapp formbold-mb-3">
 {/* name */}
         <div>
           <input
             type="text"
-            name="firstname"
-            id="firstname"
+            name="fname"
+            id="fname"
             placeholder="First name"
             class="formbold-form-input"
           />
 
           <input
             type="text"
-            name="lastname"
-            id="lastname"
+            name="lname"
+            id="lname"
             placeholder="Last name"
             class="formbold-form-input"
           />
@@ -193,7 +121,7 @@ useEffect(() => {
 
 {/* data  */}
       <div class="formbold-mb-3">
-        <input type="date" name="dob" id="dob" class="formbold-form-input" />
+        <input type="date" name="date" id="date" class="formbold-form-input" />
       </div>
 
       <div class="formbold-mb-3">

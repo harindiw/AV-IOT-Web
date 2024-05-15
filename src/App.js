@@ -11,11 +11,15 @@ import { Blog } from "./components/Blog/Blog";
 import { Contact } from "./components/Contact/Contact"
 import { SendMsg } from "./components/Contact/SendMsg"
 
+import { ToastContainer } from "react-toastify";
+
+
 function App() {
   return (
     <div className="App">
       
       <NavBar />
+      <ToastContainer />
       <Router>
         <Routes>
         <Route path="/" element={<Home/>} /> 
