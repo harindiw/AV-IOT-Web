@@ -3,6 +3,8 @@ import React , { useRef } from "react";
 import "./Subscribe.css";
 //import Star from './Star.png';
 import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Subscribe = () => {
 	const form = useRef();
@@ -17,9 +19,11 @@ export const Subscribe = () => {
 		.then(
 		  () => {
 			console.log('SUCCESS!');
+			toast.success('Thank you for subscribing!');
 		  },
 		  (error) => {
 			console.log('FAILED...', error);
+			toast.error('error. try again')
 		  },
 		);
 	};

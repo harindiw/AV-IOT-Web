@@ -4,7 +4,6 @@ import "./SendMsg.css";
 import React ,{ useRef }from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
-
 import 'react-toastify/dist/ReactToastify.css';
 // import {useForm} from 'react-hook-form';
 
@@ -15,7 +14,7 @@ export const SendMsg = () => {
 	  e.preventDefault();
   
 	  emailjs
-		.sendForm('service_rgnoocv', 'template_3tguye3', form.current, {
+		.sendForm('service_rgnoocv', 'template_deuoujx', form.current, {
 		  publicKey: 'mzx4wsWnJQ18NbxVl',
 		})
 		.then(
