@@ -1,6 +1,5 @@
 import IOTlogo1 from './Home_imgs/IOTlogo1.png';
-/*import IOTlogo from './Home_imgs/IOTlogo.png';*/
-import { FaEnvelope, FaGoogle } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { IoLogoYoutube } from "react-icons/io";
