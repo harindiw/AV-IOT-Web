@@ -18,7 +18,7 @@ import React from 'react';
             <div className="blue1">Director </div>
             <p className="blue2">BSc.Eng(Hons) Mechanical Engineering - University of Moratuwa</p>
             <div className="blue2">M.Eng - USA</div>
-            <div className="blue2">PhD - USA</div>
+            <div className="blue2">Ph.D. - USA</div>
            </div>
         </div>
         </div>
