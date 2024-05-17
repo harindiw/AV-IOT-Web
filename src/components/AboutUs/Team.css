@@ -102,11 +102,12 @@
     background-image: url('men6.png');
   }
 
-  /*.work-h1{
+ .work-h1{
     background-color: #001125;
-  }*/
+  }
 
   .blue1{
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #000E41;
     font-style: normal;
@@ -114,6 +115,7 @@
   }
 
   .blue2{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #000E41;
     font-weight:lighter;
