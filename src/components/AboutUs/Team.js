@@ -29,10 +29,10 @@ import React from 'react';
             <div class="card-ab">
               <div class="flip-front-team-card-img img-2"> </div>
               <div class="flip-card-back">
-              <div className="green1">Nishal Dayarathna </div>
-            <div className="green1">Director </div>
-            <p className="green2">BSc.Eng(Hons) Electrical Engineering - University of Moratuwa</p>
-            <div className="green2">MBA - University of Wales Trinity Saint David</div>
+              <div className="blue1">Nishal Dayarathna </div>
+            <div className="blue1">Director </div>
+            <p className="blue2">BSc.Eng(Hons) Electrical Engineering - University of Moratuwa</p>
+            <div className="blue2">MBA - University of Wales Trinity Saint David</div>
             </div>
           </div>
         </div>
@@ -71,9 +71,9 @@ import React from 'react';
           <div class="card-ab">
           <div class="flip-front-team-card-img img-5"> </div>
               <div class = "flip-card-back">
-            <div className="green1">Santhush Wijerathne </div>
-            <div className="green1">Automation Engineer </div>
-            <p className="green2">BSc.Eng(Hons) Mechanical Engineering (Mechatronics Specialisation) - SLIIT</p>
+            <div className="blue1">Santhush Wijerathne </div>
+            <div className="blue1">Automation Engineer </div>
+            <p className="blue2">BSc.Eng(Hons) Mechanical Engineering (Mechatronics Specialisation) - SLIIT</p>
               </div>
           </div>
         </div>
