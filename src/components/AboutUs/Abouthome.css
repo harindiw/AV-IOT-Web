@@ -86,7 +86,7 @@ body {
  .svg {
   stroke: #3FA1FB;
   position: absolute;
-  bottom: -100vh;
+  bottom: 20vh;
   transform-style: preserve-3d; }
 
 .svg:nth-child(1) {
