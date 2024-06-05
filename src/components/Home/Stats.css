@@ -18,21 +18,20 @@
   /* padding-top: 195px; */
   height: 594px;
 }
+
 .row-stat {
   background: #001125;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* margin-bottom: auto; */
+  /* margin-bottom: auto; 
+  position: relative; */
   /* margin: -100px 0px; */
   width: 100%;
-  /* padding-top: 100px; */
   flex-wrap: wrap;
-  /* padding-top: 195px; */
   height: 408px;
   padding-bottom: -157px;
 }
-
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
